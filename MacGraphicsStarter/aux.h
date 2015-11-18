@@ -6,7 +6,7 @@
 //
 //
 
-//this will have the BUTTON, SLIDER, COLOR, POINT classes
+//this will have the BUTTON, SLIDER, POINT classes
 
 #ifndef __MacGraphicsStarter__aux__
 #define __MacGraphicsStarter__aux__
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "shapes.hpp"
 
-
+//Point Class will take an x and y and then draw a little circle
 class Point
 {
 public:
@@ -24,20 +24,18 @@ public:
     void paint() const;
 };
 
+
+//Button Class will take 2 points and draw a Rectangle
+//Pretty much it will be a rectangle with a function to check clicks
 class Button : public Rectangle
 {
 public:
-    Button(const Point &p1, const Point &p2, const Color &color);
+    Button(const Point &p1, const Point &p2);
     bool contains(const Point &point) const;
 };
 
-class Color
-{
-public:
-    Color();
-    Color(double red_in, double green_in, double blue_in);
-    double r, g, b;
-};
+
+
 
 
 

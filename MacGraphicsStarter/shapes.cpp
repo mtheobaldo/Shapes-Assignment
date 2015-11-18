@@ -13,13 +13,13 @@
 Shape::Shape()
 {
     p1 = Point();
-    mColor = Color();
+    double r=R, g=G, b=B;
 }
 
-Shape::Shape(const Point &p1_in, const Color &color)
+Shape::Shape(const Point &p1_in)
 {
+    double r=R, g=G, b=B;
     p1 = p1_in;
-    mColor = color;
 }
 
 Shape::~Shape()

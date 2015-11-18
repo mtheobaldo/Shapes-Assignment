@@ -5,7 +5,7 @@
 #include <GL/glut.h>
 #include <iostream>
 
-Circle::Circle(const Point &position_in, const double &radius_in, const Color &color_in, int ol)
+Circle::Circle(const Point &position_in, const double &radius_in)
   : Shape(position_in, color_in),
     radius(radius_in), outline(ol)
 {

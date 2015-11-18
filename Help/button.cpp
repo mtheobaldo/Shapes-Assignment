@@ -12,7 +12,7 @@ Button::Button(const Point &position_in, const Point &corner_in, const Color &co
 }
 
 
-bool Button::contains(const Point &position_test) const
+bool Button::contains(const Point &pbosition_test) const
 {
 	double x = position_test.x;
 	double y = position_test.y;
